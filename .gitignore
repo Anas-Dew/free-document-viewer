@@ -3,7 +3,9 @@ fdv
 
 # project files
 
-free-document-viewer/free-document-viewer/__pycache__
+free-document-viewer/__pycache__
 
-# db
-free-document-viewer/db.sqlite3
+# db and files
+db.sqlite3
+
+document-cache
