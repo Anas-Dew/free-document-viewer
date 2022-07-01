@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+    <script src="{% static 'index.js' %}"></script>  
+    <title>Free Document Viewer - CSV, XLSX, DOC, TXT</title>
+    
+</head>
+<body>
+    <div id="main-div">
+        <div class="navi-bar">
+            <h1 id="navi-head">Free Document Viewer</h1>
+            <div class="navi-bar-item">
+                <form action="/" method="post" enctype="multipart/form-data">
+                    {% csrf_token %}
+                    <input type="file" name="file" id="file" enctype="multipart/form-data" accept=".csv,.xlsx">
+                    <input type="submit" value="UPLOAD">
+                </form>
+            </div>
+        </div>
+        
+        <div id="dataframe" style="display: none;">{{data}}</div>
+        <div id="table-div-data">Upload a file</div>
+
+        <div id="descframe" style="display: none;">{{desc}}</div>
+        <div id="table-div-desc">Upload a file</div>
+        <!-- <div>
+            <img src='{% static "images/plot.png" %}' alt="Upload a file">
+        </div> -->
+    </div>
+</body>
+</html>
