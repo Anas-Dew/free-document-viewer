@@ -1,3 +1,6 @@
+/* A function that is called when the page is loaded. It is used to replace the URL with a blank
+string. It is also used to get the text content of the dataframe and descframe elements and then
+render them in the table-div-data and table-div-desc elements. */
 window.onload = function () {
     history.replaceState("", "", "/");
     let datahtml = document.getElementById('dataframe').textContent;
