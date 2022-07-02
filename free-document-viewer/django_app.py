@@ -2,10 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 def import_data(filepath):
+    """
+    This function takes in a filepath and returns a dataframe
+    
+    :param filepath: The path to the file you want to import
+    :return: A dataframe
+    """
     if '.csv' in filepath:
-        data = pd.read_csv(filepath, on_bad_lines='skip') 
-        #changed pd.read to pd.read_csv because pandas doesnt have any attrebute 'read'
-        # and there was an error of tokenizing while reading csv files so i added this error_bad_lines = false
+        data = pd.read_csv(filepath, on_bad_lines='skip',encoding = "ISO-8859-1") 
     elif '.xlsx' in filepath:
         data = pd.read_excel(filepath)
     else:
