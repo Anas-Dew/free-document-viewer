@@ -5,10 +5,10 @@ def home(request):
     if request.method == 'POST':
         file = request.FILES['file']
 
-        with open(f"{file}",'wb') as f:
+        with open(f"document-cache/{file}",'wb') as f:
             f.write(file.read())
 
-        data = Analysis(f"{file}")
+        data = Analysis(f"document-cache/{file}")
         desc = descriptive(data=data)
 
         return render(request, 'home/index.html',{"data":data.to_html(),"desc":desc.to_html()})

@@ -1,20 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
 #main-div {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 3rem;
+    background-color:#01E08F;
+    height: 100vh;
 }
 
-#navi-bar {
+.navi-bar {
+    width: 100%;
     display: flex;
-    flex-direction: row;    
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 90%;
+    margin-top: -1rem;
+    background-color: #013870;
+    height: 12rem;
 }
 
 #navi-head {
-
+    font-family: 'Bree Serif', serif;
+    color: white;
+    font-size: xxx-large;
 }
 
 #navi-bar-item {
@@ -56,3 +65,49 @@
     overflow-y: auto;
     height: 20rem;
 }
+
+/* ------------COMPONENTS------------------------------------- */
+.button-21 {
+    align-items: center;
+    appearance: none;
+    background-color: #3EB2FD;
+    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+    background-size: calc(100% + 20px) calc(100% + 20px);
+    border-radius: 100px;
+    border-width: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: CircularStd,sans-serif;
+    font-size: 1rem;
+    height: auto;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 6px 20px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .2s,background-position .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    white-space: nowrap;
+  }
+  
+  .button-21:active,
+  .button-21:focus {
+    outline: none;
+  }
+  
+  .button-21:hover {
+    background-position: -20px -20px;
+  }
+  
+  .button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+  }
+
+  /* ---------------------- */

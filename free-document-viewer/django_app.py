@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 
 def import_data(filepath):
     if '.csv' in filepath:
-        data = pd.read_csv(filepath, error_bad_lines=False) 
+        data = pd.read_csv(filepath, on_bad_lines='skip') 
         #changed pd.read to pd.read_csv because pandas doesnt have any attrebute 'read'
         # and there was an error of tokenizing while reading csv files so i added this error_bad_lines = false
     elif '.xlsx' in filepath:
