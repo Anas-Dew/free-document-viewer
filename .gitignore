@@ -7,3 +7,6 @@ free-document-viewer/free-document-viewer/__pycache__
 
 # db
 free-document-viewer/db.sqlite3
+
+#media files
+document-cache
