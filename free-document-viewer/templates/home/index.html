@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
     <script src="{% static 'index.js' %}"></script>  
+    <link rel="icon"href="{% static 'favicon.png' %}">
     <title>Free Document Viewer - CSV, XLSX</title>
     <meta name="description" content="Looking for an online document viewer for your files, no need to install any software just use our web app to view csv and excel files easily.">
     <meta name="keywords" content="online document viewer,web document viewer,multiple file format viewer,django document viewer control,document viewer software for csv,csv viewer">
@@ -18,7 +19,7 @@
             <div class="navi-bar-item">
                 <form action="/" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
-                    <input class="button-21" style="color: chartreuse;" type="file" name="file" id="file" enctype="multipart/form-data" accept=".csv,.xlsx">
+                    <input class="button-21" style="color: chartreuse;" type="file" name="file" id="file" enctype="multipart/form-data" accept=".csv,.xlsx,.xls">
                     <input class="button-21" type="submit" value="UPLOAD">
                 </form>
             </div>
@@ -27,11 +28,7 @@
         <div id="dataframe" style="display: none;">{{data}}</div>
         <div id="table-div-data"></div>
 
-        <!-- <div id="descframe" style="display: none;">{{desc}}</div>
-        <div id="table-div-desc"></div> -->
-        <!-- <div>
-            <img src='{% static "images/plot.png" %}' alt="Upload a file">
-        </div> -->
     </div>
+    <!-- <a href="https://www.flaticon.com/free-icons/document" title="document icons">Document icons created by Stockio - Flaticon</a> -->
 </body>
 </html>
