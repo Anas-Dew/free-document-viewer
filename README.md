@@ -28,7 +28,7 @@ Supported Formats
 | CSS| Django|
 | JS| SQLite|
 
-
+<a href="https://www.buymeacoffee.com/anasraza" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 ## Contributions are welcomed !
 ### <a href="https://github.com/Anas-Dew/free-document-viewer/tree/development">Switch</a> to development branch to know more... 
