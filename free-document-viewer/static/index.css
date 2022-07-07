@@ -1,11 +1,82 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
+@media screen and (max-width: 640px) {
+    body {
+        background-color: rgb(121, 0, 235);
+    }
+
+    .button-21 {
+        font-size: xx-small;
+        padding: 0px;
+    }
+
+    #navi-head {
+        font-size: x-large;
+    }
+
+    #navi-bar-item {
+        width: 9rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    body {
+        background-color: rgb(121, 0, 235);
+    }
+
+    .button-21 {
+        font-size: 1rem;
+        padding: 6px 20px;
+        margin-top: 1rem;
+    }
+
+    #navi-head {
+        font-size: xxx-large;
+    }
+
+    #navi-bar-item {
+        width: 17rem;
+    }
+
+    .button-21 {
+        align-items: center;
+        appearance: none;
+        background-color: #3EB2FD;
+        background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+        background-size: calc(100% + 20px) calc(100% + 20px);
+        border-radius: 100px;
+        border-width: 0;
+        box-shadow: none;
+        box-sizing: border-box;
+        color: #FFFFFF;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: CircularStd, sans-serif;
+        height: auto;
+        justify-content: center;
+        line-height: 1.5;
+        position: relative;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color .2s, background-position .2s;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+        vertical-align: top;
+        white-space: nowrap;
+    }
+    #file {
+        background-image: none;
+        background-color: #3eb2fd00;
+    }
+}
+
 #main-div {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:#01E08F;
+    background-color: #01E08F;
     height: 100vh;
 }
 
@@ -16,18 +87,17 @@
     flex-direction: column;
     align-items: center;
     margin-top: -1rem;
-    background-color: #013870;
-    height: 12rem;
 }
 
 #navi-head {
     font-family: 'Bree Serif', serif;
     color: white;
-    font-size: xxx-large;
+    /* font-size: xxx-large; */
 }
 
 #navi-bar-item {
-
+    display: flex;
+    flex-direction: column;
 }
 
 /* ---------------------DATA CSS------------------------------------ */
@@ -40,6 +110,7 @@
     min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .dataframe thead tr {
     background-color: #009879;
     color: #ffffff;
@@ -50,6 +121,7 @@
 .dataframe td {
     padding: 12px 15px;
 }
+
 .dataframe tbody tr {
     border-bottom: 1px solid #dddddd;
 }
@@ -61,53 +133,32 @@
 .dataframe tbody tr:last-of-type {
     border-bottom: 2px solid #009879;
 }
+
 #table-div-data {
+    margin-top: 1rem;
     overflow-y: auto;
-    height: 20rem;
+    height: 100vh;
+    width: 95%;
+}
+
+#table-div-data > table{
+    border: 4px solid;
 }
 
 /* ------------COMPONENTS------------------------------------- */
-.button-21 {
-    align-items: center;
-    appearance: none;
-    background-color: #3EB2FD;
-    background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
-    background-size: calc(100% + 20px) calc(100% + 20px);
-    border-radius: 100px;
-    border-width: 0;
-    box-shadow: none;
-    box-sizing: border-box;
-    color: #FFFFFF;
-    cursor: pointer;
-    display: inline-flex;
-    font-family: CircularStd,sans-serif;
-    font-size: 1rem;
-    height: auto;
-    justify-content: center;
-    line-height: 1.5;
-    padding: 6px 20px;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color .2s,background-position .2s;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    vertical-align: top;
-    white-space: nowrap;
-  }
-  
-  .button-21:active,
-  .button-21:focus {
-    outline: none;
-  }
-  
-  .button-21:hover {
-    background-position: -20px -20px;
-  }
-  
-  .button-21:focus:not(:active) {
-    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
-  }
 
-  /* ---------------------- */
+
+.button-21:active,
+.button-21:focus {
+    outline: none;
+}
+
+.button-21:hover {
+    background-position: -20px -20px;
+}
+
+.button-21:focus:not(:active) {
+    box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+}
+
+/* ---------------------- */
