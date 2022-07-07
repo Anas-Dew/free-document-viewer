@@ -17,11 +17,11 @@
     <div id="main-div">
         <div class="navi-bar">
             <h1 id="navi-head">Free Document Viewer</h1>
-            <div class="navi-bar-item">
-                <form action="/" method="post" enctype="multipart/form-data">
+            <div>
+                <form id="navi-bar-item" action="/" method="post" enctype="multipart/form-data">
                     {% csrf_token %}
-                    <input class="button-21" style="color: chartreuse;" type="file" name="file" id="file" enctype="multipart/form-data" accept=".csv,.xlsx,.xls">
-                    <input class="button-21" type="submit" value="UPLOAD">
+                    <input class="button-21" style="color: black;" type="file" name="file" id="file" enctype="multipart/form-data" accept=".csv,.xlsx,.xls">
+                    <input class="button-21" type="submit" id="upload" value="UPLOAD">
                 </form>
             </div>
         </div>
