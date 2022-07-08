@@ -7,8 +7,19 @@ window.onload = function () {
     let tableid = document.getElementById('table-div-data');
     render_data = `${datahtml}`
     tableid.innerHTML = render_data;
-    let deschtml = document.getElementById('descframe').textContent;
-    let descid = document.getElementById('table-div-desc');
-    render_desc = `${deschtml}`
-    descid.innerHTML = render_desc;
+    // let deschtml = document.getElementById('descframe').textContent;
+    // let descid = document.getElementById('table-div-desc');
+    // render_desc = `${deschtml}`
+    // descid.innerHTML = render_desc;
 };
+
+
+// function w3_open() {
+//     document.getElementById("mySidebar").style.display = "block";
+//     document.getElementById("myOverlay").style.display = "block";
+//   }
+  
+//   function w3_close() {
+//     document.getElementById("mySidebar").style.display = "none";
+//     document.getElementById("myOverlay").style.display = "none";
+//   }
