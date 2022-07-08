@@ -1,8 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@300&display=swap');
 
 @media screen and (max-width: 640px) {
     body {
-        background-color: rgb(121, 0, 235);
+        background-color: black;
+        margin: 0.5rem;
     }
 
     .button-21 {
@@ -21,7 +22,8 @@
 
 @media screen and (min-width: 640px) {
     body {
-        background-color: rgb(121, 0, 235);
+        background-color: black;
+        margin: 0.5rem;
     }
 
     .button-21 {
@@ -76,7 +78,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #01E08F;
+    background-color: yellow;
     height: 100vh;
 }
 
@@ -86,13 +88,12 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: -1rem;
+    margin-top: 2rem;
 }
 
 #navi-head {
-    font-family: 'Bree Serif', serif;
-    color: white;
-    /* font-size: xxx-large; */
+    font-family: 'Albert Sans', sans-serif;
+    color: black;
 }
 
 #navi-bar-item {
@@ -112,7 +113,7 @@
 }
 
 .dataframe thead tr {
-    background-color: #009879;
+    background-color: #3EB2FD;
     color: #ffffff;
     text-align: left;
 }
@@ -147,6 +148,7 @@
 
 /* ------------COMPONENTS------------------------------------- */
 
+/* --------------ACTION BUTTONS------------ */
 
 .button-21:active,
 .button-21:focus {
@@ -161,4 +163,21 @@
     box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
 }
 
+/* ----------------FOOTER---------- */
+footer {
+    color: white;
+    display: flex;
+    align-items: baseline;
+}
+footer > a{
+    padding: 0.2rem;
+    text-decoration: auto;
+    color: black;
+    font-size: x-small;
+}
+footer > a:hover{
+    padding: 0.2rem;
+    text-decoration: auto;
+    color: blue;
+}
 /* ---------------------- */
